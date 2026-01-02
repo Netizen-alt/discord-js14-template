@@ -2,6 +2,8 @@ import { botclient } from "./utils/core/botclient";
 import config from './config/config';
 import { IntentsBitField, Events } from "discord.js";
 import Logger from "./utils/logger/app";
+import commands from "./commands/app";
+import { interactionEvent } from "./utils/events/interaction.events";
 
 class App {
     private readonly client: botclient;
@@ -50,15 +52,13 @@ class App {
     }
 
     private registerCommands(): void {
-        const commands = [
-            // new  YourCommandClass(),
-        ];
-        this.client.registerCommands(commands);
+        const commandArray = Object.values(commands);
+        this.client.registerCommands(commandArray);
     }
 
     private registerEvents(): void {
         const events = [
-            // new YourEventClass(),
+            new interactionEvent(), 
         ];
         this.client.registerEvents(events);
     }
