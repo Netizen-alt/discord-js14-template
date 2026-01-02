@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 Documentation
+    url: https://github.com/Netizen-alt/discord-js14-template/blob/main/README.md
+    about: Check the README for setup guides and examples
+  - name: 💬 Discord.js Guide
+    url: https://discordjs.guide/
+    about: Official Discord.js documentation and guides
+  - name: 📖 Discord.js Docs
+    url: https://discord.js.org/
+    about: Discord.js API documentation

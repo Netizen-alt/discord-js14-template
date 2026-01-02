@@ -1,0 +1,62 @@
+name: ❓ Question
+description: Ask a question about using the template
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question? We're here to help! Please fill out the form below.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: What would you like to know?
+      placeholder: How do I...?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Question Category
+      description: What is your question about?
+      options:
+        - Setup & Installation
+        - Configuration
+        - Commands
+        - Events
+        - Payment Integration
+        - Database Setup
+        - Deployment
+        - TypeScript/Discord.js
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Provide any relevant context or what you've tried so far
+      placeholder: I tried... but...
+
+  - type: textarea
+    id: code
+    attributes:
+      label: Relevant Code
+      description: If applicable, paste relevant code snippets
+      render: typescript
+      placeholder: |
+        // Your code here
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have read the README documentation
+          required: true
+        - label: I have searched existing issues for similar questions
+          required: true
