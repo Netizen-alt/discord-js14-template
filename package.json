@@ -1,0 +1,35 @@
+{
+  "name": "dt-payments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/app.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.958.0",
+    "@supabase/supabase-js": "^2.89.0",
+    "axios": "^1.13.2",
+    "canvas": "^3.2.0",
+    "discord.js": "^14.25.1",
+    "jimp": "^1.6.0",
+    "jsqr": "^1.4.0",
+    "luxon": "^3.7.2",
+    "mongodb": "^7.0.0",
+    "promptparse": "^1.5.0",
+    "promptpay-qr": "^0.5.0",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.7.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

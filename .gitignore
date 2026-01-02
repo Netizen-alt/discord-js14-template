@@ -1,0 +1,23 @@
+# dependencies
+node_modules/
+
+# build
+dist/
+build/
+
+# environment variables
+.env
+.env.local
+
+# logs
+logs
+*.log
+
+# system
+.DS_Store
+
+# vscode
+.vscode/
+
+# config
+config/config.ts
